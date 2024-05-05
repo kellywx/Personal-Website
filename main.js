@@ -26,8 +26,32 @@ const reveal = () => {
             reveals[i].classList.add('active');
         } else {
             reveals[i].classList.remove('active');
-        }
+        }  
     }
+
 }
 
 window.addEventListener('scroll', reveal);
+
+
+// CSS animation triggered when scrolling
+const animation_element = document.querySelectorAll('.text-typing, .text-typing-2');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        } else {
+            entry.target.classList.remove('animate');
+        }
+    })
+}, {
+    threshold: 0.5  // starts animating as soon as 50% of element comes in screen
+});
+
+// add all animation elements into our observer
+for (let i=0; i<animation_element.length; i++) {
+    const element = animation_element[i];
+
+    observer.observe(element);
+}
