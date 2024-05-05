@@ -1,20 +1,21 @@
 <html> 
-  <head>
+<head>
     <title>Kelly Wei Jin</title>
     <link href="./resources/styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gluten:wght@100..900&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
     <script src="./main.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-
+        
         <!-------------- Navigation Bar -------------->
         <nav>
             <img src="./resources/images/logo.png" class="logo" alt="logo">
-
+            
             <div id="nav-container">
-
+                
                 <ul class="nav-links">
                     <li>
                         <a href="#aboutme">About Me</a>
@@ -29,36 +30,74 @@
                         <a href="resources/resume.pdf" target="_blank">Resume</a>
                     </li>
                 </ul>
-
+                
                 <ul class="social-links">
                     <li>
                         <a href="https://www.linkedin.com/in/joeberkowitz1/" target="_blank">
-                            <img src="./resources/images/icons8-linkedin-50.png" alt="linkedin">
+                            <img src="./resources/images/linkedin.png" alt="linkedin">
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/kellywx" target="_blank">
-                            <img src="./resources/images/icons8-github-50.png" alt="github">
+                            <img src="./resources/images/github.png" alt="github">
                         </a>
                     </li>
                 </ul>
-
+                
             </div>
         </nav>\
-
+        
     </header>
-
+    
     <main>
-         <!-------------- About Me -------------->
-         <section class="about-container">
-            <canvas id="sprinkles"></canvas>
-
+        <!-------------- About Me Section -------------->
+        <section class="about-container">
+            <!-- <canvas id="sprinkles"></canvas> -->
+            
             <div class="about-me">
                 <h1>Hi there!👋 My name is Kelly</h1>
                 <h4>I am  second year computer science student at UBC. I am a student of CodeCademy's Full Stack Engineer Career Path. I have experience in web design (HTML, CSS, & JS). </h4>
             </div>
             <img src="./resources/images/profile.jpg" class="profile-pic" alt="picture of me">
+            
+        </section>
+        
+        
+        <!-------------- Experience Section -------------->
+        <section class="experience-section reveal" id="experience">
+            <div class="text-typing"> 
+                <h2>Experience</h2> 
+            </div> 
 
+            <div class="experience-container">
+               
+                <div id = "Piano Teacher" class="experience">
+                    <span class="experience-role">Piano Teacher </span>
+                    <p>January 2016 - January 2018</p>
+                    <ul>
+                        <li>Taught children piano techniques and musical pieces in
+                            preparation for the Royal Conservatory of Music (RCM) piano
+                            examinations</li>
+                        <li>Adopted a friendly teaching style and communicated regularly
+                            with parents regarding their child’s progress</li>
+                    </ul>
+                </div>
+
+                <div id = "Tutor" class="experience" style="display: none">
+                    <span class="experience-role">Tutor </span>
+                    <span class="experience-place">@ Pansophy Education Centre </span>
+                    <p>March 2024 - Present</p>
+                    <ul>
+                        <li>Tutor for Math, Physics, and English for elementary and high school students.</li>
+                        <li>Created lesson plans, materials, and communicated effectively with parents about child's progress.</li>
+                    </ul>
+                </div>
+
+                <div class="toggle">
+                    <a class="toggle-active">Piano Teacher</a>
+                    <a class="toggle-inactive">Tutor</a>
+                </div>
+            </div>
         </section>
     </main>
-       
+</body>

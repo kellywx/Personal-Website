@@ -4,8 +4,8 @@
     margin: 0px;
     padding: 0px;
     font-size: 16px;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #cf8787;
+    font-family: 'DM Sans';
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-image: radial-gradient(#021027, #000000);
+    background-image:#f2e4e7;
 }
 
 h1 {
@@ -34,22 +34,7 @@ h3 {
 h4 {
     font-size: 1.25rem;
     padding: 0.6rem 0;
-}
-
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-.reveal{
-    position: relative;
-    transform: translateY(4rem);
-    opacity: 0;
-    transition: 0.5s all ease;
-}
-.reveal.active{
-    transform: translateY(0);
-    opacity: 1;
+    color: #be9b7b;
 }
 
 
@@ -94,7 +79,7 @@ nav a {
 
 .social-links {
     margin-right: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .social-links img {
@@ -107,9 +92,20 @@ nav a {
 }
 
 
+.reveal{
+    position: relative;
+    transform: translateY(4rem);
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* -------------- Header Section Styles ------------------ */
 
-.about-me, .about-me img{
+.about-me, .about-container img {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -128,7 +124,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .about-container .profile-pic {
@@ -151,3 +147,119 @@ nav a {
     width: 100%;
     height: 100%;
 } */
+
+
+
+/* -------------- Experience Section Styles ------------------ */
+
+
+.experience-section {
+    margin-top: 7rem;
+}
+
+/* .experience-section h2 {
+    text-align: center;
+} */
+
+.experience-container {
+    display:flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    background-color : white;
+}
+
+.toggle {
+    display: flex;
+    align-items: stretch;
+    margin-top: 1.5rem;
+}
+
+.toggle a {
+    font-family: 'DM Sans';
+}
+
+.experience {
+    max-width: 500px;
+}
+
+.experience ul {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.experience-role {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.experience-place {
+    font-size: 1rem;
+}
+
+.experience p {
+    padding-top: 0.5rem;
+}
+
+.experience li {
+    font-family: 'DM Sans';
+    padding-top: 0.5rem;
+    color: #be9b7b;
+}
+
+.toggle-inactive {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.toggle-active {
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 0.25rem solid #E19FAE;
+}
+
+.toggle-inactive:hover {
+    background-color: #fde4f250;
+}
+
+.text-typing { 
+    background: #f5f5f5; 
+    border-radius: 50px; 
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.text-typing h2 { 
+    margin: 0px; 
+    padding: 1rem;
+    white-space: nowrap; 
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); 
+    animation:  
+typing 5s steps(25, end) forwards, blink 1s infinite; 
+} 
+
+@keyframes typing { 
+    0% { 
+        width: 0% 
+    } 
+
+    100% { 
+        width: 60% 
+    } 
+} 
+
+@keyframes blink { 
+
+    0%, 
+    100% { border-right: 2px solid transparent; 
+    } 
+
+
+    50% { 
+        border-right: 1.5px solid #222; 
+    } 
+
+} 
