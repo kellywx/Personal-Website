@@ -65,7 +65,7 @@ nav a {
     padding-bottom: 0.5rem;
 }
 
-#nav-container {
+.nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,6 +103,7 @@ nav a {
     transform: translateY(0);
     opacity: 1;
 }
+
 
 /* -------------- Header Section Styles ------------------ */
 
@@ -175,6 +176,29 @@ nav a {
   100% { transform: rotate( 0.0deg) }
 }
 
+@media only screen and (max-width: 965px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container {
+        margin-top: 0;
+    }
+    .profile-pic{
+        display:none;
+    }
+
+}
 
 
 /* -------------- Experience Section Styles ------------------ */
@@ -193,7 +217,8 @@ nav a {
     margin-top: 3rem;
     flex-direction: column;
     align-items: center;
-    background-color : white;
+    background-color :white;
+    height: 50%;
 }
 
 .toggle {
@@ -216,7 +241,7 @@ nav a {
 }
 
 .experience-role {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -232,6 +257,7 @@ nav a {
     font-family: 'DM Sans';
     padding-top: 0.5rem;
     color: #be9b7b;
+    font-size: 1rem;
 }
 
 .toggle-inactive {
@@ -299,6 +325,14 @@ nav a {
     } 
 
 } 
+
+
+@media only screen and (max-width: 965px) {
+    .text-typing { 
+        width: 50%;
+    } 
+    
+}
 
 /* -------------- Skill Section ------------------ */
 
@@ -384,6 +418,15 @@ nav a {
     } 
 
 } 
+
+@media only screen and (max-width: 965px) {
+    .text-typing-2 { 
+        width: 50%;
+    } 
+    .skill-container {
+        flex-wrap: wrap;
+    }
+}
 
 /* -------------- Footer ------------------ */
 .footer {
