@@ -73,8 +73,9 @@ nav a {
 }
 
 .logo {
-    height: 5rem;
+    height: 4rem;
     width: auto;
+    margin-left: 1rem;
 }
 
 .social-links {
@@ -127,7 +128,7 @@ nav a {
     margin-top: 3rem;
 }
 
-.about-container .profile-pic {
+.profile-pic {
     width: 20%;
     height: auto;
     border-radius: 20%;
@@ -383,3 +384,23 @@ nav a {
     } 
 
 } 
+
+/* -------------- Footer ------------------ */
+.footer {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+.footer-div img {
+    height: 1rem;
+    width: auto;
+    margin: 0.5rem;
+}
+
+.footer-div {
+    display: flex;
+    align-items: center;
+}
